@@ -3,16 +3,14 @@
   "description": "vendor libraries for StoredIQ development stack",
   "author": "Aaron Stacy <astacy@storediq.com>",
   "version": "0.0.1",
+  "main": "main.js",
   "scripts": {
     "test": "make test"
   },
   "dependencies": {
-    "requirejs": ">=1.0.7",
-    "underscore": ">=1.3.x",
-    "requirejs-path": "git+ssh://astacy@localhost:work/requirejs-path",
-    "requirejs-css": "git+ssh://astacy@localhost:work/requirejs-css"
+    "underscore": ">=1.3.x"
   },
   "devDependencies": {
-    "rjs-qunit-test-server": "git+ssh://astacy@localhost:work/rjs-qunit-test-server"
+    "rjs-qunit-test-server": "0.0.x"
   }
 }
