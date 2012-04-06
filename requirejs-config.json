@@ -1,10 +1,10 @@
 {
 	"paths": {
-		"vendor": "vendor",
-		"jquery": "vendor/jquery",
-		"underscore": "vendor/underscore",
-		"jquery-ui": "vendor/jquery-ui",
-		"t": "vendor/t",
-		"json2": "vendor/json2"
+		"vendor": "./vendor",
+		"jquery": "./vendor/jquery",
+		"underscore": "./components/vendor/underscore",
+		"jquery-ui": "./vendor/jquery-ui",
+		"t": "./vendor/t",
+		"json2": "./vendor/json2"
 	}
 }
