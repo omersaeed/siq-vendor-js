@@ -11,7 +11,7 @@
     "underscore": ">=1.3.x",
     "siq-js-component": "git+ssh://localhost:work/component"
   },
-  "devDependencies": {
-    "rjs-qunit-test-server": "0.0.x"
+  "component": {
+    "name": "vendor"
   }
 }
