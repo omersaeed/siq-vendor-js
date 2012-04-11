@@ -1,10 +1,10 @@
 /*global test, asyncTest, ok, equal, deepEqual, start, module */
 require([
-    'path!jquery',
-    'path!underscore',
-    'path!jquery-ui',
-    'path!t',
-    'path!json2'
+    'path!vendor:jquery',
+    'path!vendor:underscore',
+    'path!vendor:jquery-ui',
+    'path!vendor:t',
+    'path!vendor:json2'
 ], function($, _, jquery_ui, t, json2) {
     test('jquery loads', function() {
         ok($);

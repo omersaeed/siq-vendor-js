@@ -1,9 +1,0 @@
-{
-	"paths": {
-		"jquery": "./vendor/jquery",
-		"underscore": "./vendor/underscore",
-		"jquery-ui": "./vendor/jquery-ui",
-		"t": "./vendor/t",
-		"json2": "./vendor/json2"
-	}
-}
