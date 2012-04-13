@@ -41,4 +41,5 @@ require([
 		t.dfs(tree, function() { visited.push(this.name); });
         deepEqual(visited, ['a', 'b', 'c']);
     });
+    start();
 });
