@@ -1,11 +1,12 @@
-/*global test, asyncTest, ok, equal, deepEqual, start, module */
+/*global test, asyncTest, ok, equal, deepEqual, start, module, notEqual */
 require([
     'path!vendor:jquery',
     'path!vendor:underscore',
     'path!vendor:jquery-ui',
     'path!vendor:t',
-    'path!vendor:json2'
-], function($, _, jquery_ui, t, json2) {
+    'path!vendor:json2',
+    'path!vendor:jit'
+], function($, _, jquery_ui, t, json2, $jit) {
     test('jquery loads', function() {
         ok($);
 		$('<div class=my-vendor-js-test-div>').appendTo('#qunit-fixture');
@@ -40,6 +41,18 @@ require([
 			};
 		t.dfs(tree, function() { visited.push(this.name); });
         deepEqual(visited, ['a', 'b', 'c']);
+    });
+    test('json2 loads', function() {
+        var o = {a: 1, b: 2}, stringified, parsed;
+        ok(json2);
+        stringified = json2.stringify(o);
+        ok(stringified);
+        parsed = json2.parse(stringified);
+        deepEqual(parsed, {a: 1, b: 2});
+        notEqual(parsed, o);
+    });
+    test('$jit loads', function() {
+        ok($jit);
     });
     start();
 });
