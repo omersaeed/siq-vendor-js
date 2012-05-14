@@ -1,11 +1,11 @@
 /*global test, asyncTest, ok, equal, deepEqual, start, module, notEqual */
-require([
-    'path!vendor:jquery',
-    'path!vendor:underscore',
-    'path!vendor:jquery-ui',
-    'path!vendor:t',
-    'path!vendor:json2',
-    'path!vendor:jit'
+define([
+    './jquery',
+    './underscore',
+    './jquery-ui',
+    './t',
+    './json2',
+    './jit'
 ], function($, _, jquery_ui, t, json2, $jit) {
     test('jquery loads', function() {
         ok($);
