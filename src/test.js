@@ -1,12 +1,12 @@
 /*global test, asyncTest, ok, equal, deepEqual, start, module, notEqual */
 define([
-    './jquery',
-    './underscore',
-    './jquery-ui',
-    './t',
-    './json2',
-    './jit',
-    './spin'
+    'vendor/jquery',
+    'vendor/underscore',
+    'vendor/jquery-ui',
+    'vendor/t',
+    'vendor/json2',
+    'vendor/jit',
+    'vendor/spin'
 ], function($, _, jquery_ui, t, json2, $jit, spin) {
     test('jquery loads', function() {
         ok($);
