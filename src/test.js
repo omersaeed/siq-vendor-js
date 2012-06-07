@@ -5,8 +5,9 @@ define([
     './jquery-ui',
     './t',
     './json2',
-    './jit'
-], function($, _, jquery_ui, t, json2, $jit) {
+    './jit',
+    './spin'
+], function($, _, jquery_ui, t, json2, $jit, spin) {
     test('jquery loads', function() {
         ok($);
 		$('<div class=my-vendor-js-test-div>').appendTo('#qunit-fixture');
@@ -53,6 +54,9 @@ define([
     });
     test('$jit loads', function() {
         ok($jit);
+    });
+    test('spin loads', function() {
+        ok(Spinner());
     });
     start();
 });
