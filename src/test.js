@@ -3,11 +3,12 @@ define([
     'vendor/jquery',
     'vendor/underscore',
     'vendor/jquery-ui',
+    'vendor/moment',
     'vendor/t',
     'vendor/json2',
     'vendor/jit',
     'vendor/spin'
-], function($, _, jquery_ui, t, json2, $jit, spin) {
+], function($, _, jquery_ui, moment, t, json2, $jit, spin) {
     test('jquery loads', function() {
         ok($);
 		$('<div class=my-vendor-js-test-div>').appendTo('#qunit-fixture');
@@ -30,6 +31,10 @@ define([
 			of: $('#qunit-testresult')
 		});
 		ok(/\d+px/.test($hw.css('left')));
+    });
+	test('moment loads', function() {
+        ok(moment());
+        ok(moment().format('dddd, MMMM Do YYYY, h:mm:ss a'));
     });
     test('t loads', function() {
 		var visited = [],
