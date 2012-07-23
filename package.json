@@ -10,7 +10,7 @@
   "dependencies": {
     "csi": "git+ssh://git@github.com:siq/csi.git"
   },
-  "component": {
+  "csi": {
     "name": "vendor"
   },
   "devDependencies": {},
