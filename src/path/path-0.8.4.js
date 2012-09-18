@@ -1,3 +1,4 @@
+/* Copyright (c) 2011 Mike Trpcic, released under the MIT license. */
 var Path = {
     'version': "0.8.4",
     'map': function (path) {
