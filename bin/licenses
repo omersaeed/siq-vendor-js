@@ -1,0 +1,47 @@
+#! /usr/bin/env coffee
+
+fs = require "fs"
+{join} = require "path"
+require "shelljs/global"
+
+src = join __dirname, "../src"
+
+any = (l)-> o for o in l when o
+
+yamlPostMatter = (readme)->
+  split = readme.split(/(^|\n)(?:[*-]\s?){3,}\n/)
+  return if split.length < 2
+  lines = split[-1..][0].split("\n")
+  lines.reduce(((memo, line)->
+    if line
+      [all, key, value, rest...] = line.match(/^([^:]+):\s*(.*)$/)
+      memo[key] = value
+    memo
+  ), {})
+
+licenses =
+  "MIT": /Permission is hereby granted, free of charge, to any person/
+  "Apache Version 2.0": /Apache License, Version 2.0/
+
+license = (text)->
+  for name, pat of licenses
+    if pat.test text
+      return name
+
+paths = JSON.parse(fs.readFileSync "requirejs-config.json", "utf8").paths
+
+version = (dir)->
+  paths["./"+dir].split("/")[-1..][0].match(/\d\.\d(\.\d)?/)?[0] || "None"
+
+libs = []
+for d in ls(src)
+  if test("-d", join(src, d)) and test("-f", join(src, d, "LICENSE"))
+    readme = (join(src, d, f) for f in ls(join(src, d)) when /readme/i.test(f))
+    if readme
+      info = yamlPostMatter cat(readme)
+      if info?.name
+        console.log info.name + ':'
+        console.log "  version: #{version(d)}"
+        console.log "  license: #{license(cat(join(src, d, "LICENSE")))}"
+        console.log "  #{k}: #{v}" for k, v of info when k != "name"
+        console.log ""

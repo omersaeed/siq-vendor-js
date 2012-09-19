@@ -12,3 +12,9 @@ You may specify a versin by changing 'current' to 'x.x.x'.  Note that the
 resulting Javascript is minified, so the two files in the `development/ui`
 directory (`jquery.ui.core.js` and `jquery.ui.position.js`) were just
 concatenated to make our custom file, since we perform our own minification.
+
+---
+name: jQuery UI
+website: http://jqueryui.com/
+purpose: positioning user-interface elements on the screen
+
