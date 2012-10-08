@@ -2,8 +2,8 @@
     "paths": {
         "./excanvas": "./excanvas/excanvas-unknown",
         "./jit": "./jit/jit-master",
-        "./jquery": "./jquery/jquery-1.7.2",
-        "./jquery-ui": "./jquery-ui/jquery-ui-1.8.18.custom",
+        "./jquery": "./jquery/jquery-1.8.2",
+        "./jquery-ui": "./jquery-ui/jquery-ui-1.8.24.custom",
         "./json2": "./json2/json2",
         "./moment": "./moment/moment-1.7.0",
         "./path": "./path/path-0.8.4",
