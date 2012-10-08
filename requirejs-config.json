@@ -5,7 +5,7 @@
         "./jquery": "./jquery/jquery-1.8.2",
         "./jquery-ui": "./jquery-ui/jquery-ui-1.8.24.custom",
         "./json2": "./json2/json2",
-        "./moment": "./moment/moment-1.7.0",
+        "./moment": "./moment/moment-1.7.2",
         "./path": "./path/path-0.8.4",
         "./spin": "./spin/spin-1.2.5",
         "./t": "./t/t-0.4.0",
