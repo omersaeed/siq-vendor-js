@@ -2,13 +2,13 @@
   "name": "siq-vendor-js",
   "description": "vendor libraries for siq development stack",
   "author": "Aaron Stacy <astacy@storediq.com>",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "main.js",
   "scripts": {
     "test": "make test"
   },
   "dependencies": {
-    "csi": "git+ssh://git@github.com:siq/csi.git#1.0.3"
+    "csi": "git+ssh://git@github.com:siq/csi.git#1.0.4"
   },
   "devDependencies": {
     "coffee-script": "~1.3.3",
