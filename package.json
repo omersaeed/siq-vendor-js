@@ -2,7 +2,7 @@
   "name": "siq-vendor-js",
   "description": "vendor libraries for siq development stack",
   "author": "Aaron Stacy <astacy@storediq.com>",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "main": "main.js",
   "scripts": {
     "test": "make test"
