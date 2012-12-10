@@ -9,7 +9,8 @@
         "./path": "./path/path-0.8.4",
         "./spin": "./spin/spin-1.2.5",
         "./t": "./t/t-0.4.0",
-        "./underscore":  "./underscore/underscore-1.4.2"
+        "./underscore":  "./underscore/underscore-1.4.2",
+        "./uuid":  "./uuid/uuid-1.4.0"
     },
     "shim": {
         "./jit": {
